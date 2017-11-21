@@ -1,11 +1,11 @@
 {
   "name": "nkanderson",
   "short_name": "nkanderson",
-  "description": "A very cute app",
+  "description": "!",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#ffc0cb",
-  "theme_color": "#ffc0cb",
+  "background_color": "#00449e",
+  "theme_color": "#00449e",
   "icons": [{
     "src": "/assets/icon.png",
     "type": "image/png",

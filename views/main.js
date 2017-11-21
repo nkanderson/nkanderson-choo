@@ -1,6 +1,7 @@
-var html = require('choo/html')
+let html = require('choo/html')
+let article = require('../components/article.js')
 
-var TITLE = '🚂🚋🚋'
+let TITLE = '!'
 
 module.exports = view
 
@@ -9,19 +10,13 @@ function view (state, emit) {
 
   return html`
     <body class="sans-serif">
-      <h1 class="f-headline pa3 pa4-ns">
-        Choo choo!
+      <h1 class="f3 ph5 pv4 mt0 bg-washed-blue near-black bt bb b--gray">
+        Nicole K. Anderson
       </h1>
 
       <div class="ph3 ph4-ns">
-        <p>Current number of clicks: ${state.totalClicks}</p>
-
-        <button class="f5 dim br-pill ph3 pv2 mb2 dib white bg-hot-pink bn pointer" onclick=${handleClick}>Click Me!</button>
+        ${state.articles.map(article)}
       </div>
     </body>
   `
-
-  function handleClick () {
-    emit('clicks:add', 1)
-  }
 }

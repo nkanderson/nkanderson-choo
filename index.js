@@ -1,10 +1,10 @@
-var css = require('sheetify')
-var choo = require('choo')
-var store = require('./stores/clicks')
+let css = require('sheetify')
+let choo = require('choo')
+let store = require('./store')
 
 css('tachyons')
 
-var app = choo()
+let app = choo()
 if (process.env.NODE_ENV !== 'production') {
   app.use(require('choo-devtools')())
 } else {
