@@ -1,8 +1,8 @@
 let html = require('choo/html')
 
 module.exports = function (images, picClasses) {
-    let { mobile, webp, img, alt } = images;
-    return html`
+  let { mobile, webp, img, alt } = images
+  return html`
         <div class='${picClasses}' style='overflow: scroll; height: 480px'>
             <picture>
                 <source media='(max-width: 767px)'

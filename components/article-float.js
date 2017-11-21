@@ -1,8 +1,8 @@
 let html = require('choo/html')
 
 module.exports = function (article) {
-    let { type, title, description, img } = article;
-    return html`
+  let { title, description, img } = article
+  return html`
         <article class="container">
             <div class="cf" style="background: url(${img}) no-repeat center center fixed; background-size: cover;">
                 <div class="fl pa3 pa4-ns bg-white black-70 measure-narrow f3 times">

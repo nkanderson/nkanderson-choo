@@ -83,7 +83,7 @@ function store (state, emitter) {
         },
         alt: 'placeholder nature image'
       }
-    },
+    }
   ]
 
   emitter.on('DOMContentLoaded', function () {

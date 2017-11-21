@@ -2,9 +2,9 @@ let html = require('choo/html')
 let picture = require('./picture.js')
 
 module.exports = function (article) {
-    let { type, title, intro, description, img } = article;
-    let picClasses = 'w-100 w-50-ns'
-    return html`
+  let { title, intro, description, img } = article
+  let picClasses = 'w-100 w-50-ns'
+  return html`
         <article class="pv5">
             <div class="flex flex-column flex-row-ns justify-between">
                 <div class="w-100 w-40-ns pa3 pa4-ns bg-white black-70 f3">
