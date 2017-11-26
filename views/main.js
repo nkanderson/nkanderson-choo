@@ -26,6 +26,7 @@ function view (state, emit) {
       </div>
 
       <div class="ph3 ph4-ns bg-dark-blue pv4">
+        <h2 class="ph4 white">Sandbox</h2>
         <div class="flex flex-column flex-row-ns justify-between">
           ${state.sandbox.map(card)}
         </div>

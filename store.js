@@ -10,7 +10,7 @@ function store (state, emitter) {
       intro: 'OMSI.edu site using Drupal 7',
       link: 'https://omsi.edu',
       linkText: 'OMSI.edu',
-      description: 'I was involved in the full-site redesign of omsi.edu, working on everything from custom Drupal modules in PHP to front-end styling using Sass and BEM. Since the launch in September 2015, I\'ve set up end-to-end and visual regression testing using Nightwatch and Wraith, created custom workflows with the Mailchimp API, and worked to improve measurment of site metrics through improved analytics and data collection. Using Python scripts and the Pandas library for data cleanup and import, I\'ve reduced time spent on regular content management and updates.',
+      description: 'I was involved in the full-site redesign of omsi.edu, working on everything from custom Drupal modules in PHP to front-end styling using Sass and BEM. Since the launch in September 2015, I\'ve set up end-to-end and visual regression testing using Nightwatch and Wraith, created custom workflows with the Mailchimp API, and improved measurment of site metrics through improved analytics and data collection. Using Python scripts and the Pandas library for data cleanup and import, I\'ve reduced time spent on regular content management and updates.',
       images: [
         {
           mobile: {
@@ -39,8 +39,8 @@ function store (state, emitter) {
           webp: {
             src: '/assets/OMSI-Space.webp'
           },
-          alt: 'OMSI.edu map with Space Science content',
-          caption: 'OMSI.edu map with Space Science content'
+          alt: 'OMSI.edu map with space science content',
+          caption: 'OMSI.edu space science map, using Leaflet'
         },
         {
           mobile: {
@@ -55,7 +55,7 @@ function store (state, emitter) {
             src: '/assets/OMSI-Quiz.webp'
           },
           alt: 'OMSI.edu camps and classes quiz intro',
-          caption: 'OMSI.edu Camps and Classes quiz intro page'
+          caption: 'OMSI.edu quiz, using React'
         }
       ]
     },
@@ -65,7 +65,7 @@ function store (state, emitter) {
       intro: 'rustw, a web frontend for the Rust compiler',
       link: 'https://github.com/nkanderson/rustw',
       linkText: 'rustw on github',
-      description: 'Lorem ipsum heeey',
+      description: 'Was one of 12 participants selected to work with Rust core team members to improve Rust development tools and resources. Worked on rustw, a web frontend for the Rust compiler, built with React & Redux.',
       images: [
         {
           mobile: {
@@ -102,10 +102,10 @@ function store (state, emitter) {
     {
       type: 'project',
       title: 'Hack Oregon',
-      intro: 'Worked two seasons on PlotPDX, an urban development-themed data project',
+      intro: 'PlotPDX, an urban development-themed data project',
       link: 'http://plotpdx.org',
       linkText: 'PlotPDX',
-      description: 'Lorem ipsum heeey',
+      description: 'I worked for two project seasons on PlotPDX. My first season contribution centered on the front-end javascript used to aggregate data from microservices and create an animated map using Leaflet. During the second season, I contributed to the ETL pipeline for housing data from Zillow in a PostgreSQL database, using Python and the Pandas library to prepare data.',
       images: [
         {
           mobile: {
@@ -144,7 +144,7 @@ function store (state, emitter) {
   state.sandbox = [
     {
       title: 'Horsethief Lake',
-      description: 'Sandbox project using Canvas and lite parallax',
+      description: 'Sandbox project using the Canvas element, CSS animation, and just a little parallax.',
       images: [
         {
           mobile: {
@@ -166,7 +166,7 @@ function store (state, emitter) {
     },
     {
       title: 'Under Construction',
-      description: 'Classic under construction trope, but with webm, a video format allowing for transparent backgrounds.',
+      description: 'Classic "under construction" trope, but with webm, a video format allowing for transparent backgrounds.',
       images: [
         {
           mobile: {
