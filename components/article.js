@@ -2,17 +2,19 @@ const css = require('sheetify')
 const html = require('choo/html')
 const picture = require('./picture.js')
 
-const prefix = css`
-    :host {
-        height: 480px;
-        overflow: scroll;
+const articleItem = css`
+    :host:first-child {
+        border-top: 0px;
+    }
+    :host:last-child {
+        border-bottom: 0px;
     }
 `
 
 module.exports = function (article) {
-  let { title, intro, description, images } = article
+  let { title, intro, description, images, link, linkText } = article
   return html`
-        <article class="pv5">
+        <article class="pv4 mv3 bt bb bw1 b--near-white ${articleItem}">
             <div class="flex flex-column flex-row-ns justify-between">
                 <div class="w-100 w-50-ns pa3 pa4-ns black-70 f3">
                     <header class="bb b--black-70 pv4">
@@ -22,10 +24,15 @@ module.exports = function (article) {
                     <section class="pt5 pb4">
                         <p class="times lh-copy measure black f5 mt0">
                             ${description}
+                            ${link ? html`<span class="pl1">
+                                    <a class="underline link black bg-animate hover-bg-dark-blue hover-white" 
+                                       href="${link}">[${linkText}]</a>
+                                    </span>
+                                ` : ''}
                         </p>
                     </section>
                 </div>
-                <div class='w-100 w-50-ns shadow-1 bg-white ${prefix}'>
+                <div class='w-100 w-50-ns'>
                     ${images.map(picture)}
                 </div>
             </div>

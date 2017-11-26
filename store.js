@@ -7,8 +7,10 @@ function store (state, emitter) {
     {
       type: 'work',
       title: 'OMSI',
-      intro: 'OMSI.edu site using Drupal 7, Python scripting, custom workflows with the Mailchimp API ',
-      description: 'Lorem ipsum heeey',
+      intro: 'OMSI.edu site using Drupal 7',
+      link: 'https://omsi.edu',
+      linkText: 'OMSI.edu',
+      description: 'I was involved in the full-site redesign of omsi.edu, working on everything from custom Drupal modules in PHP to front-end styling using Sass and BEM. Since the launch in September 2015, I\'ve set up end-to-end and visual regression testing using Nightwatch and Wraith, created custom workflows with the Mailchimp API, and worked to improve measurment of site metrics through improved analytics and data collection. Using Python scripts and the Pandas library for data cleanup and import, I\'ve reduced time spent on regular content management and updates.',
       images: [
         {
           mobile: {
@@ -60,7 +62,9 @@ function store (state, emitter) {
     {
       type: 'project',
       title: 'Increasing Rust\'s Reach',
-      intro: 'Working on rustw, a web frontend for the Rust compiler',
+      intro: 'rustw, a web frontend for the Rust compiler',
+      link: 'https://github.com/nkanderson/rustw',
+      linkText: 'rustw on github',
       description: 'Lorem ipsum heeey',
       images: [
         {
@@ -96,31 +100,11 @@ function store (state, emitter) {
       ]
     },
     {
-      type: 'work',
-      title: 'Isolary',
-      intro: 'Custom applications using the Laravel PHP framework.',
-      description: 'Lorem ipsum heeey',
-      images: [
-        {
-          mobile: {
-            src: 'https://placeimg.com/640/480/tech',
-            type: 'jpeg'
-          },
-          main: {
-            src: 'https://placeimg.com/640/480/tech',
-            type: 'jpeg'
-          },
-          webp: {
-            src: 'https://placeimg.com/640/480/tech'
-          },
-          alt: 'placeholder tech image'
-        }
-      ]
-    },
-    {
       type: 'project',
       title: 'Hack Oregon',
       intro: 'Worked two seasons on PlotPDX, an urban development-themed data project',
+      link: 'http://plotpdx.org',
+      linkText: 'PlotPDX',
       description: 'Lorem ipsum heeey',
       images: [
         {
@@ -175,7 +159,27 @@ function store (state, emitter) {
             src: '/assets/Horsethief-Lake.webp'
           },
           alt: 'Screenshot of Horsethief Lake page',
-          caption: ''
+          caption: '',
+          displayCaption: false
+        }
+      ]
+    },
+    {
+      title: 'Under Construction',
+      description: 'Classic under construction trope, but with webm, a video format allowing for transparent backgrounds.',
+      images: [
+        {
+          mobile: {
+            src: '/assets/Under-Construction.gif',
+            type: 'gif'
+          },
+          main: {
+            src: '/assets/Under-Construction.gif',
+            type: 'gif'
+          },
+          alt: 'Animated GIF of construction worker breaking through wall',
+          caption: '',
+          displayCaption: false
         }
       ]
     }
