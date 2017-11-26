@@ -1,30 +1,17 @@
-let html = require('choo/html')
+const html = require('choo/html')
 
-module.exports = function (images, picClasses) {
-  let { mobile, webp, img, alt } = images
+module.exports = function (img) {
+  const { mobile, webp, main, alt, caption } = img
   return html`
-        <div class='${picClasses}' style='overflow: scroll; height: 480px'>
+        <figure>
             <picture>
                 <source media='(max-width: 767px)'
                         srcset='${mobile.src}' type='${mobile.type}' />
                 <source srcset='${webp.src}' type='image/webp'>
-                <source srcset='${img.src}' type='${img.type}'>
-                <img class='picture__img' src='${img.src}' alt='${alt}'>
+                <source srcset='${main.src}' type='${main.type}'>
+                <img class='picture__img' src='${main.src}' alt='${alt}'>
             </picture>
-            <picture>
-                <source media='(max-width: 767px)'
-                        srcset='${mobile.src}' type='${mobile.type}' />
-                <source srcset='${webp.src}' type='image/webp'>
-                <source srcset='${img.src}' type='${img.type}'>
-                <img class='picture__img' src='${img.src}' alt='${alt}'>
-            </picture>
-            <picture>
-                <source media='(max-width: 767px)'
-                        srcset='${mobile.src}' type='${mobile.type}' />
-                <source srcset='${webp.src}' type='image/webp'>
-                <source srcset='${img.src}' type='${img.type}'>
-                <img class='picture__img' src='${img.src}' alt='${alt}'>
-            </picture>
-        </div>
-    `
+            <figcaption>${caption || alt}</figcaption>
+        </figure>
+      `
 }

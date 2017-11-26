@@ -1,6 +1,6 @@
-let css = require('sheetify')
-let choo = require('choo')
-let store = require('./store')
+const css = require('sheetify')
+const choo = require('choo')
+const store = require('./store')
 
 css('tachyons')
 
