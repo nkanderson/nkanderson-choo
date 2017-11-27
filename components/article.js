@@ -22,7 +22,7 @@ module.exports = function (article) {
                         <h4 class="f4 fw4 lh-title mt0">${intro}</h4>
                     </header>
                     <section class="pt5 pb4">
-                        <p class="times lh-copy measure black f5 mt0">
+                        <p class="lh-copy measure black f5 mt0">
                             ${description}
                             ${link ? html`<span class="pl1">
                                     <a class="underline link black bg-animate hover-bg-dark-blue hover-white" 
