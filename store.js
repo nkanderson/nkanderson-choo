@@ -144,6 +144,8 @@ function store (state, emitter) {
   state.sandbox = [
     {
       title: 'Horsethief Lake',
+      link: 'https://nkanderson-sandbox.nyc3.digitaloceanspaces.com/horsethief-lake/index.html',
+      linkText: 'Link',
       description: 'Sandbox project using the Canvas element, CSS animation, and just a little parallax.',
       images: [
         {
@@ -166,6 +168,8 @@ function store (state, emitter) {
     },
     {
       title: 'Under Construction',
+      link: 'https://nkanderson-sandbox.nyc3.digitaloceanspaces.com/construction/index.html',
+      linkText: 'Link',
       description: 'Classic "under construction" trope, but with webm, a video format allowing for transparent backgrounds.',
       images: [
         {

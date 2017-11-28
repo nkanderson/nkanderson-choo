@@ -9,7 +9,7 @@ const prefix = css`
 `
 
 module.exports = function (sandboxItem) {
-  let { title, description, images } = sandboxItem
+  let { title, description, images, link, linkText } = sandboxItem
   return html`
         <article class="mw5 center bg-white pa3 pa3-ns mv3 ba b--near-black">
                 <div class="tc ${prefix}">
@@ -19,6 +19,11 @@ module.exports = function (sandboxItem) {
                 </div>
                 <p class="lh-copy measure center f6 black-70 ph1">
                     ${description}
+                    ${link ? html`<span class="pl1">
+                    <a class="underline link black bg-animate hover-bg-dark-blue hover-white" 
+                       href="${link}">[${linkText}]</a>
+                    </span>
+                ` : ''}
                 </p>
         </article>
     `
