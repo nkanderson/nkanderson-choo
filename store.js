@@ -10,7 +10,7 @@ function store (state, emitter) {
       intro: 'OMSI.edu site using Drupal 7',
       link: 'https://omsi.edu',
       linkText: 'OMSI.edu',
-      description: 'Worked on full site redesign in Drupal 7, contributing on multiple levels of the codebase, from custom Drupal modules to front-end styling. Since the launch in September 2015, additional projects have included setting up end-to-end and visual regression testing using Nightwatch and Wraith, creating custom workflows with the Mailchimp API, and improving measurement of site metrics through Google Analytics and Tag Manager. Beyond regular maintenance and feature additions, developed multiple stand-alone, interactive experiences in single-page application style to facilitate deeper user engagement.',
+      description: 'Worked on full site redesign, contributing on multiple levels of the codebase from custom Drupal modules to front-end styling. Since the launch in September 2015, additional projects have included setting up end-to-end and visual regression testing using Nightwatch and Wraith, creating custom workflows with the Mailchimp API, and improving measurement of site metrics through Google Analytics and Tag Manager. Beyond regular maintenance and feature additions, developed multiple stand-alone, interactive experiences in single-page application style to facilitate deeper user engagement.',
       images: [
         {
           mobile: {
@@ -40,7 +40,7 @@ function store (state, emitter) {
             src: '/assets/OMSI-Space.webp'
           },
           alt: 'OMSI.edu map with space science content',
-          caption: 'OMSI.edu space science map, using Leaflet.',
+          caption: 'OMSI.edu space science map, using Leaflet',
           link: {
             url: 'https://omsi.edu/space#map',
             text: 'OMSI.edu/space'
@@ -59,7 +59,7 @@ function store (state, emitter) {
             src: '/assets/OMSI-Quiz.webp'
           },
           alt: 'OMSI.edu camps and classes quiz intro',
-          caption: 'OMSI.edu quiz, made with React.',
+          caption: 'OMSI.edu quiz, made with React',
           link: {
             url: 'https://omsi.edu/quiz',
             text: 'OMSI.edu/quiz'

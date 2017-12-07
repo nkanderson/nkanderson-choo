@@ -1,7 +1,7 @@
 const html = require('choo/html')
 
 module.exports = function (img) {
-  const { mobile, webp, main, alt, caption, link=null, displayCaption } = img
+  const { mobile, webp, main, alt, caption, link = null, displayCaption } = img
   return html`
         <figure>
             <picture>
