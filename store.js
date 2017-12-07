@@ -10,7 +10,7 @@ function store (state, emitter) {
       intro: 'OMSI.edu site using Drupal 7',
       link: 'https://omsi.edu',
       linkText: 'OMSI.edu',
-      description: 'I was involved in the full-site redesign of omsi.edu, working on everything from custom Drupal modules in PHP to front-end styling using Sass and BEM. Since the launch in September 2015, I\'ve set up end-to-end and visual regression testing using Nightwatch and Wraith, created custom workflows with the Mailchimp API, and improved measurment of site metrics through improved analytics and data collection. Using Python scripts and the Pandas library for data cleanup and import, I\'ve reduced time spent on regular content management and updates.',
+      description: 'Worked on full site redesign in Drupal 7, contributing on multiple levels of the codebase, from custom Drupal modules to front-end styling. Since the launch in September 2015, additional projects have included setting up end-to-end and visual regression testing using Nightwatch and Wraith, creating custom workflows with the Mailchimp API, and improving measurement of site metrics through Google Analytics and Tag Manager. Beyond regular maintenance and feature additions, developed multiple stand-alone, interactive experiences in single-page application style to facilitate deeper user engagement.',
       images: [
         {
           mobile: {
@@ -40,7 +40,11 @@ function store (state, emitter) {
             src: '/assets/OMSI-Space.webp'
           },
           alt: 'OMSI.edu map with space science content',
-          caption: 'OMSI.edu space science map, using Leaflet'
+          caption: 'OMSI.edu space science map, using Leaflet.',
+          link: {
+            url: 'https://omsi.edu/space#map',
+            text: 'OMSI.edu/space'
+          }
         },
         {
           mobile: {
@@ -55,7 +59,11 @@ function store (state, emitter) {
             src: '/assets/OMSI-Quiz.webp'
           },
           alt: 'OMSI.edu camps and classes quiz intro',
-          caption: 'OMSI.edu quiz, using React'
+          caption: 'OMSI.edu quiz, made with React.',
+          link: {
+            url: 'https://omsi.edu/quiz',
+            text: 'OMSI.edu/quiz'
+          }
         }
       ]
     },
@@ -65,7 +73,7 @@ function store (state, emitter) {
       intro: 'rustw, a web frontend for the Rust compiler',
       link: 'https://github.com/nkanderson/rustw',
       linkText: 'rustw on github',
-      description: 'Was one of 12 participants selected to work with Rust core team members to improve Rust development tools and resources. Worked on rustw, a web frontend for the Rust compiler, built with React & Redux.',
+      description: 'Was one of 12 participants selected to work with Rust core team members to improve Rust development tools and resources. Focus of project work has been on rustw, a web frontend for the Rust compiler built with React & Redux. To date, improvements have been made to the development experience, adding API documentation and tools like JSON server, as well as the end user experience, with URL routing and a cleaner layout.',
       images: [
         {
           mobile: {
@@ -105,7 +113,7 @@ function store (state, emitter) {
       intro: 'PlotPDX, an urban development-themed data project',
       link: 'http://plotpdx.org',
       linkText: 'PlotPDX',
-      description: 'I worked for two project seasons on PlotPDX. My first season contribution centered on the front-end javascript used to aggregate data from microservices and create an animated map using Leaflet. During the second season, I contributed to the ETL pipeline for housing data from Zillow in a PostgreSQL database, using Python and the Pandas library to prepare data.',
+      description: 'Met weekly with team over two project seasons to create a data product exploring urban development in Portland. First season contribution centered on the front-end javascript used to aggregate data from microservices and create an animated map using Leaflet. During the second season, main contributions were to the ETL pipeline, using Python and the Pandas library to prepare data from Zillow before it was loaded into a PostgreSQL database.',
       images: [
         {
           mobile: {
@@ -146,7 +154,7 @@ function store (state, emitter) {
       title: 'Horsethief Lake',
       link: 'https://nkanderson-sandbox.nyc3.digitaloceanspaces.com/horsethief-lake/index.html',
       linkText: 'Link',
-      description: 'Sandbox project using the Canvas element, CSS animation, and just a little parallax.',
+      description: 'Sandbox project using the HTML Canvas element, CSS animation, and just a little parallax.',
       images: [
         {
           mobile: {
