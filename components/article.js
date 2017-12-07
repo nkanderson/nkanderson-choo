@@ -14,14 +14,14 @@ const articleItem = css`
 module.exports = function (article) {
   let { title, intro, description, images, link, linkText } = article
   return html`
-        <article class="pv4 mv3 bt bb bw1 b--near-white ${articleItem}">
+        <article class="pv4-ns pb3 pt2 mv3-ns mv2 bt bb bw1 b--near-white ${articleItem}">
             <div class="flex flex-column flex-row-ns justify-between">
                 <div class="w-100 w-50-ns pa3 pa4-ns black-70 f3">
-                    <header class="bb b--black-70 pv4">
+                    <header class="bb b--black-70 pv4-ns pv3">
                         <h3 class="f2 fw7 ttu tracked lh-title mt0 mb3">${title}</h3>
                         <h4 class="f4 fw4 lh-title mt0">${intro}</h4>
                     </header>
-                    <section class="pt5 pb4">
+                    <section class="pv5-ns pt4 pb3">
                         <p class="lh-copy measure black f5 mt0">
                             ${description}
                             ${link ? html`<span class="pl1">
