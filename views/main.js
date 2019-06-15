@@ -13,7 +13,7 @@ function view (state, emit) {
     <body class="sans-serif">
       <header class="ph5-ns ph4 pv4 mv0 bg-washed-blue bt bb b--gray">
         <h1 class="near-black mv0">
-          Nicole K. Anderson
+          Nik K. Anderson
         </h1>
         <p class="f3 mv1">Web Developer</p>
         <p class="f3 mv1">Portland, OR</p>
